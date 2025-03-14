@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Nav from './Nav';
 
 const MainLayout = () => {
   return (
     <div>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          {/* Add more navigation links here */}
-        </ul>
-      </nav>
+        <Nav/>
       <main>
         <Outlet />
       </main>
